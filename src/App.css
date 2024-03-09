@@ -1,38 +1,92 @@
 .App {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #91090d;
+}
+.app-details,
+.app-message {
+  flex: 1;
+  padding: 70px;
+}
+.app-details h1 {
+  font-size: 70px;
+  color: #fff;
+}
+.love-quote {
+  display: flex;
+  gap: 20px;
+}
+.love-quote p {
+  line-height: 23px;
+  color: #e58c8a;
+}
+.app-message input {
+  padding: 11px 20px;
+  width: 80%;
+  margin-bottom: 15px;
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+  color: #000;
+}
+.app-message button {
+  margin-top: 15px;
+  padding: 12px 22px;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+.app-message button:hover {
+  background: #fff;
+  color: #fe016e;
+}
+.form-data h2 {
+  color: #fff;
+}
+.form-data p {
+  color: #e58c8a;
+  margin-bottom: 7px;
+  font-size: 13px;
+}
+
+.result {
+  margin-top: 40px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result h3 {
+  font-size: 45px;
+  color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.result p {
+  color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.active {
+  display: none;
 }
-
-.App-link {
-  color: #61dafb;
+.heart {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heart span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  font-size: 220px;
+  color: #fff;
+  z-index: 1;
+  line-height: 220px;
+}
+.heart h2 {
+  position: relative;
+  color: #fe016e;
+  font-size: 50px;
+  padding: 70px;
+  z-index: 2;
+  margin-top: 0px;
 }
