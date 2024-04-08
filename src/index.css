@@ -6,10 +6,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
 }
-:hover {
-  transition: background-color 0.5s ease;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}

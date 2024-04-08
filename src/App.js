@@ -49,7 +49,7 @@ function App() {
               <button onClick={showResult}>Check Result</button>
             </form></div>
         </div>
-        {random && <div className={` result ${isActive ? null : "active"}`}>
+        {random && <div className={`result ${isActive ? null : "active"}`}>
           <h3>{name1.charAt(0).toUpperCase() + name1.slice(1)} & {name2.charAt(0).toUpperCase() + name2.slice(1)}</h3>
           <div className='heart'>
             <span>❤</span>
